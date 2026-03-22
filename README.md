@@ -1,32 +1,45 @@
-# Cosmophonix Portal
+# Cosmophonix Production Site
 
-Landing page pubblica per il nuovo portale Cosmophonix.
+Landing minimale pubblica per `cosmophonix.com`.
 
-## Cosa contiene
+## Contenuto attivo
 
 - `index.html`
-  - landing `coming soon` pubblica
-  - nessun link insider al resort dalla homepage
-- `assets/site.css`
-  - visual system della landing
-- `assets/app.js`
-  - form handler con supporto a endpoint reali o fallback email
-- `assets/images/*`
-  - selezione di immagini curate dal deck `tempesta`
+  - fondo nero
+  - logo Cosmophonix
+  - `Coming soon`
+  - bottone email verso `commerciale@cosmophonix.com`
+- `assets/logo-cosmophonix.svg`
+  - logo vettoriale usato dalla home
 
-## Stato attuale
+Gli altri asset presenti nel repo non sono usati dalla homepage attuale.
 
-I form funzionano in due modalita':
+## Dominio
 
-- fallback:
-  - aprono un `mailto:` verso `commerciale@cosmophonix.com`
-- modalita' live:
-  - impostare `window.COSMOPHONIX_PORTAL_CONFIG.waitlistEndpoint`
-  - impostare `window.COSMOPHONIX_PORTAL_CONFIG.demoEndpoint`
+Il file `CNAME` e' gia' preparato per:
 
-## Prossimo step consigliato
+- `cosmophonix.com`
 
-Collegare i due form a PocketBase su Hetzner con due collection:
+## DNS da configurare
 
-- `waitlist_submissions`
-- `demo_submissions`
+`cosmophonix.com` oggi e' registrato in GoDaddy ma usa nameserver Wix.
+
+Quindi i record vanno probabilmente modificati nel pannello DNS di Wix, non in GoDaddy.
+
+Per GitHub Pages su dominio root:
+
+- record `A`:
+  - `185.199.108.153`
+  - `185.199.109.153`
+  - `185.199.110.153`
+  - `185.199.111.153`
+- record `CNAME`:
+  - `www -> maxkle1nz.github.io`
+
+## GitHub Pages
+
+- branch: `main`
+- source: `Deploy from a branch`
+- folder: `/ (root)`
+- custom domain: `cosmophonix.com`
+- attivare `Enforce HTTPS` quando disponibile
