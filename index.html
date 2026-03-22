@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Cosmophonix | New Portal Coming Soon</title>
+  <meta name="description" content="Il nuovo portale Cosmophonix sta arrivando. Lascia il tuo contatto, invia una demo e scopri il nuovo ecosistema creativo in costruzione." />
+  <meta name="theme-color" content="#080808" />
+  <link rel="preload" as="image" href="./assets/images/hero-panorama.webp" />
+  <link rel="stylesheet" href="./assets/site.css" />
+</head>
+<body>
+  <div class="page-shell">
+    <header class="topbar">
+      <a class="brand" href="./index.html" aria-label="Cosmophonix">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span class="brand-copy">
+          <strong>Cosmophonix</strong>
+          <span>Portal relaunch</span>
+        </span>
+      </a>
+      <div class="topbar-note">Coming soon</div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-copy">
+          <div class="eyebrow">A new digital front door for Cosmophonix</div>
+          <h1>Il nuovo portale e' in costruzione.</h1>
+          <p class="lead">Stiamo preparando un nuovo spazio digitale per artisti, partner, management e progetti in sviluppo. Nel frattempo puoi entrare in lista, inviarci una demo e lasciare il tuo contatto per ricevere i primi accessi.</p>
+          <div class="hero-actions">
+            <a class="button primary" href="#waitlist">Join the waitlist</a>
+            <a class="button ghost" href="#demo">Submit a demo</a>
+          </div>
+          <div class="hero-points">
+            <div class="hero-point">
+              <strong>Per artisti e autori</strong>
+              <p>Invio demo, early access e nuove opportunita' di sviluppo artistico.</p>
+            </div>
+            <div class="hero-point">
+              <strong>Per label e management</strong>
+              <p>Una nuova presentazione del sistema Cosmophonix, piu' chiara e piu' utile.</p>
+            </div>
+            <div class="hero-point">
+              <strong>Per il prossimo capitolo</strong>
+              <p>Una casa piu' solida per contatti, intake e nuove collaborazioni.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <img src="./assets/images/hero-panorama.webp" alt="Panorama del resort studio Cosmophonix" loading="eager" decoding="async" />
+          <div class="visual-caption">
+            <span>Cosmophonix</span>
+            <span>Production · hospitality · artist development</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="visual-band" aria-label="Preview del nuovo universo Cosmophonix">
+        <figure class="visual-card visual-card-large">
+          <img src="./assets/images/control-room.webp" alt="Control room Cosmophonix" loading="lazy" decoding="async" />
+          <figcaption>Studios / control room</figcaption>
+        </figure>
+        <figure class="visual-card">
+          <img src="./assets/images/auditorium.webp" alt="Auditorium del resort" loading="lazy" decoding="async" />
+          <figcaption>Resort / auditorium</figcaption>
+        </figure>
+        <figure class="visual-card">
+          <img src="./assets/images/resort-panorama.webp" alt="Panorama Tesoro Living Resort" loading="lazy" decoding="async" />
+          <figcaption>Tesoro / landscape</figcaption>
+        </figure>
+      </section>
+
+      <section class="panel-grid">
+        <article class="panel" id="waitlist">
+          <div class="panel-head">
+            <span class="kicker">Waitlist</span>
+            <h2>Richiedi accesso anticipato</h2>
+            <p>Lascia i tuoi dati e ti aggiorneremo quando il nuovo portale sara' online con aperture, form completi e nuove possibilita' di contatto.</p>
+          </div>
+
+          <form class="portal-form" data-form-type="waitlist">
+            <label class="field">
+              <span>Nome</span>
+              <input type="text" name="name" placeholder="Il tuo nome" />
+            </label>
+            <label class="field">
+              <span>Email</span>
+              <input type="email" name="email" placeholder="nome@email.com" required />
+            </label>
+            <label class="field">
+              <span>Profilo</span>
+              <input type="text" name="role" placeholder="Artista, management, label, partner..." />
+            </label>
+            <label class="field">
+              <span>Messaggio</span>
+              <textarea name="message" placeholder="Se vuoi, raccontaci in due righe chi sei e perche' vuoi entrare in contatto con Cosmophonix."></textarea>
+            </label>
+            <div class="form-row">
+              <button class="button primary" type="submit">Join</button>
+              <p class="form-note">Pronta per PocketBase. Finche' l'API non e' configurata, il form usa il fallback email.</p>
+            </div>
+            <p class="form-status" aria-live="polite"></p>
+          </form>
+        </article>
+
+        <article class="panel" id="demo">
+          <div class="panel-head">
+            <span class="kicker">Demo intake</span>
+            <h2>Invia un progetto in ascolto</h2>
+            <p>Per ora raccogliamo demo via link privato. Quando il portale completo sara' online, l'intake diventera' ancora piu' strutturato.</p>
+          </div>
+
+          <form class="portal-form" data-form-type="demo">
+            <label class="field">
+              <span>Artista / progetto</span>
+              <input type="text" name="project" placeholder="Nome artista o progetto" required />
+            </label>
+            <label class="field">
+              <span>Email</span>
+              <input type="email" name="email" placeholder="contatto@email.com" required />
+            </label>
+            <label class="field">
+              <span>Link demo</span>
+              <input type="url" name="demo_link" placeholder="Drive, Dropbox, private streaming link..." required />
+            </label>
+            <label class="field">
+              <span>Contesto</span>
+              <textarea name="message" placeholder="Che tipo di brano o percorso stai sviluppando? Che cosa cerchi da Cosmophonix?"></textarea>
+            </label>
+            <div class="form-row">
+              <button class="button primary" type="submit">Submit</button>
+              <p class="form-note">Nessun file pubblico, nessun link insider: solo intake pulito e riservato.</p>
+            </div>
+            <p class="form-status" aria-live="polite"></p>
+          </form>
+        </article>
+      </section>
+
+      <section class="manifesto">
+        <div class="manifesto-copy">
+          <span class="kicker">Portal scope</span>
+          <h2>Un front-end piu' essenziale fuori, un'infrastruttura piu' forte dentro.</h2>
+          <p>Questa landing e' pensata come interfaccia pubblica del prossimo Cosmophonix. Niente comunicazione insider, niente link sensibili in home: solo contatto, attesa e un posizionamento piu' nitido del brand mentre il portale vero prende forma.</p>
+        </div>
+        <div class="manifesto-list">
+          <div>
+            <strong>01</strong>
+            <p>Landing pubblica pulita, elegante e orientata alla raccolta.</p>
+          </div>
+          <div>
+            <strong>02</strong>
+            <p>Form gia' predisposti per agganciarsi a PocketBase o a un endpoint dedicato.</p>
+          </div>
+          <div>
+            <strong>03</strong>
+            <p>Nessuna esposizione del materiale insider dalla homepage pubblica.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <span>Cosmophonix</span>
+      <a href="mailto:commerciale@cosmophonix.com">commerciale@cosmophonix.com</a>
+      <a href="tel:+393495394479">+39 349 539 4479</a>
+    </footer>
+  </div>
+
+  <script src="./assets/app.js"></script>
+</body>
+</html>
