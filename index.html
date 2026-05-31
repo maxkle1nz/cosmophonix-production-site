@@ -6,6 +6,11 @@
   <title>Cosmophonix Production</title>
   <meta name="description" content="Cosmophonix Production" />
   <meta name="theme-color" content="#000000" />
+  <script>
+    if (location.hostname === "badman.cosmophonix.com") {
+      location.replace("https://badman-launch-site.vercel.app" + location.pathname + location.search + location.hash);
+    }
+  </script>
   <style>
     :root{
       --bg:#000000;
